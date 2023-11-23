@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background: #fef3e3;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 100;
+}
+
+.img-slo{
+  justify-content: center;
+  text-align: center;
+}
+/* .logo {
+  font-size: 2em;
+  color: #359381;
+  pointer-events: none;
+  margin-right: 270px;
+}
+.navigation a {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 6px 15px;
+  border-radius: 20px;
+  margin: 0px 10px;
+  font-weight: 600;
+}
+.navigation a:hover,
+.navigation a.active {
+  background: #359381;
+  color: #fff;
+} */
+
+.parallax {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#text {
+  position: absolute;
+  font-size: 5em;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.parallax a{
+    font-size: 20px;
+}
+
+.sec {
+  position: relative;
+  background: #fff;
+  padding: 100px;
+}
+
+.sec h2 {
+  font-size: 3em;
+  color: green;
+  margin-bottom: 10px;
+}
+.sec p {
+  font-size: 1em;
+  color: green;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container .card{
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50rem;
+    transition: .2s ease;
+}
+
+.container .card:hover{
+  border-bottom: 8px solid #544D80;
+}
+
+.content{
+  margin: 10px;
+  padding: 10px;
+}
+.service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 2rem;
+}
+
+
+.service-container .service-box {
+    flex: 1 1 30rem;
+    background: white;
+    padding: 1rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 2px solid #544D80;
+    transition: .3s ease;
+
+}
+
+.service-container .service-box:hover {
+    border-bottom: 15px solid #544D80;
+    transform: scale(1.02);
+}
+
+.service-container .service-box i {
+    font-size: 4rem;
+    color: #544D80;
+}
+
+.service-container .service-box h3 {
+    font-size: 2rem;
+}
+
+.service-box p {
+    font-size: 1rem;
+    margin: 1rem 0 3rem;
+    color: #544D80;
+}
+
+
+
+/* .top-wrapper {
+  padding: 0;
+  background-size: cover;
+  text-align: center;
+} */
+
+/* .top-wrapper h1 { */
+  /* opacity: 0.7; */
+  /* font-size: 80px;
+  margin-bottom: 15px;
+  font-weight: 800;
+} */
+
+/* .top-wrapper p { */
+  /* opacity: 0.7; */
+  /* margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 300;
+} */
+
+/* .top-wrapper img {
+  width: 967px;
+  height: 407.85px;
+} */
+
+.img-slo img{
+  margin-top: 40px;
+  width: 230.23px;
+  height: 230.23px;
+}
+
+.img-slo:hover{
+  animation: shake 0.5s ;
+  animation-iteration-count: infinite;
+}
+@keyframes shake{
+  0%{transform:translate(0px,-1px) rotate(0deg);}
+  10%{transform:translate(2px,-1px) rotate(-1deg);}
+  20%{transform:translate(-3px,-1px) rotate(1deg);}
+  30%{transform:translate(-2px,-1px) rotate(0deg);}
+  40%{transform:translate(0px,-1px) rotate(1deg);}
+  50%{transform:translate(3px,-1px) rotate(-1deg);}
+  60%{transform:translate(-1px,-1px) rotate(1deg);}
+  70%{transform:translate(0px,-1px) rotate(0deg);}
+  80%{transform:translate(2px,-1px) rotate(1deg);}
+  90%{transform:translate(0px,-1px) rotate(-1deg);}
+  100%{transform:translate(4px,-1px) rotate(0deg);}
+}
+
+.header-list .title {
+/* background-color: #ed7370; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 18px;
+  font-size: 30px;
+  color: #ED7370;
+  font-weight: 400;
+}
+span{
+  position: relative;
+}
+.title span::before{
+  content: "Win";
+  color: #5BBBA9 ;
+  animation: words 20s infinite;
+}
+.title span::after{
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: white;
+  border-left: 2px solid #544D80;
+  right: -8px;
+  animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor{
+  to{
+    border-left: 2px solid #5BBBA9;
+  }
+}
+
+@keyframes words {
+  0%, 20%{
+    content: "Win";
+  }
+  
+  
+}
+
+@keyframes typing{
+  10%,15%,30%,35%,50%,55%, 70%, 75%, 90%, 95%{
+    width: 0;
+  }
+  5%,20%,25%,40%,45%,60%,65%,80%,85%{
+    width: calc(100% + 8px);
+  }
+}
+
+
+.header-list .desc {
+  /* background-color: #ed7370; */
+  color: rgba(84, 77, 128, 0.60);
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: DM Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  animation-name: infiniteupdown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  transition: all .2s;
+  }
+
+  @keyframes infiniteupdown{
+    0%{
+      transform: translateY(0px);
+    }
+    50%{
+      transform: translateY(-12px);
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  }
+
+/* .desription {
+  font-size: 13px;
+} */
+
+.card {
+  background-color: #FAC372;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.input-control {
+  width: 100%;
+  display: block;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  border: solid white;
+  margin-bottom: 10px;
+}
+::placeholder {
+  color: black;
+  font-size: 13px;
+}
+
+input:checked{
+  margin-top: auto;
+  margin-bottom: auto;
+    accent-color: #544D80;
+}
+
+.text-right {
+  text-align: right;
+}
+
+button {
+  padding: 8px 28px;
+  border-radius: 0.3rem;
+  border: solid #544D80;
+  background-color: #544D80;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+}
+.task-item {
+  display: flex;
+  justify-content: space-between;
+}
+.edit-task {
+  color: #92CDC0;
+  font-size: 25px;
+}
+.delete-task {
+  color: #ED7370;
+  font-size: 25px;
+}
+.done {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .container {
+      width: 100%;
+  }
+}
